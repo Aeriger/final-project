@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>Survey, Leung</title>
+<meta charset="utf-8">
+
+<style>
+* {
+	margin:0px;
+	padding:0px;
+	}
+
+div#container {
+	border:5px solid #8901BF;
+	margin: 0px 25px;
+	background-color: #ccffcc;
+	}
+
+section#topbar {
+	background-color: #ccffcc;
+	height: 80px;
+	text-align:center;
+	}
+	
+section#leftbar {
+	background-color: #ccffcc;
+	width: 180px;
+	float: left;
+	} 
+
+section#mainbar {
+	background-color: #ccffcc;
+	margin-left: 180px;
+	font-family:verdana;
+	color: #0B006F;
+	}
+
+section#footer {
+	background-color: #ccffcc;
+	height: 80px;
+	clear: both;
+	text-align:center;
+	}
+
+iframe	{
+	display: block;
+	margin: auto;
+	padding: 20px;
+	}
+
+#nav	{
+	background-color:#ccffcc;
+	margin:0px auto;
+	padding:0px;
+	list-style-type:none;
+	width:130px;
+	}
+
+#nav li	{
+	background-color:#ffff99;
+	margin:10px;
+	padding:0px;
+	width:100px;
+	border:5px double #8901BF;
+	} 
+
+#nav a	{
+	display:block;
+	width:100px;
+	height:30px;
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+	color: #0B006F;
+	font-family:Courier;
+	font-weight:bold;
+	}
+
+#nav a:hover{
+	background-color:#ff7af7;
+	}
+
+fieldset
+	{
+	width:450px;
+	margin:auto;
+	border:5px solid #8901BF;
+	}
+
+legend
+	{
+	font-size:24pt;
+	font-family:verdana;
+	margin:15px;
+	color:#555555;
+	}
+
+.field
+	{
+	margin-bottom:5px;
+	}
+
+.label
+	{
+	float:left;
+	width:200px;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+
+	<section id="topbar">
+	<img src="survey.jpg"
+	alt="Survey" width="260" height="80"/>
+	</section>
+
+	<div>
+	  <section id="leftbar">
+		<ul id="nav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="survey.html">Survey</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="how_to.html">How To</a></li>
+		<li><a href="favorite.html">Favorites</a></li>
+		</ul>
+	  </section>
+
+	  <section id="mainbar">
+<form>
+	<fieldset>
+		<legend>Animation Survey</legend>
+
+	<p>Do you prefer 2D or 3D animation?
+	<br>
+	<input type="radio" name="anim" value="2d"/> 2D
+	<input type="radio" name="anim" value="3d"/> 3D
+	</p>
+	<br>
+	<p>Do you prefer Western or Japanese style of animation?
+	<br>
+	<input type="radio" name="style" value="Western"/> Western
+	<input type="radio" name="style" value="Japanese"/> Japanese
+	</p>
+	<br>
+	<div class="field">
+		<label class="label">Which is your favorite animation
+	studio?</label>
+		<select name="studio">
+			<option>--Select one--</option>
+			<option>Pixar</option>
+			<option>Disney</option>
+			<option>DreamWorks</option>
+			<option>Studio Ghibli</option>
+			<option>Other</option>
+		</select>
+	</div>
+	<br><br>
+	<div class="field">
+		<label class="label">Favorite animated film?</label>
+		<input maxLength="25" size="25" name="fav" />
+	</div>
+
+	<br>
+	<p>What do you like most about animation? Explain. <br />
+	<textarea name="comments" rows="5" cols="60"></textarea>
+	</p>
+
+	<p style=text-align:center>
+		<input type=submit value="Submit the Form" />
+		<input type=reset value="Reset the Form" />
+	</p>
+
+	</fieldset>
+
+</form>
+
+	  </section>
+	</div>
+
+	<section id="footer">
+	<p>
+	<a href = "index.html">Home</a> -
+	<a href = "survey.html">Survey</a> -
+	<a href ="about.html">About</a> -
+	<a href ="how_to.html">How To</a> -
+	<a href ="favorite.html">Favorites</a>
+	</p>
+	</section>
+</div>
+</body>
+</html>
